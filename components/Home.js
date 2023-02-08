@@ -39,7 +39,7 @@ function Home() {
   let movies = []
 
   useEffect(() => {
-    fetch('https://github.com/PhilLeGoff/MyMoviz.git/movies')
+    fetch('https://my-moviz-backend-beryl.vercel.app/movies')
       .then(response => response.json())
       .then(data => {setMoviesData(data.results); console.log((data.results[1].poster_path))})
   }, [])
